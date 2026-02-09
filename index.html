@@ -216,6 +216,34 @@
       margin-bottom: 0.5rem;
     }
 
+    .ratings {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: #f1f5f9;
+      padding: 0.25rem 0.6rem;
+      border-radius: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .rating-badge .score {
+      color: #d97706;
+    }
+
+    .rating-badge.top .score { color: #16a34a; }
+    .rating-badge.good .score { color: #2563eb; }
+    .rating-badge.mid .score { color: #d97706; }
+    .rating-badge.low .score { color: #dc2626; }
+
     .sub-option .link-btn {
       display: inline-block;
       background: var(--primary);
@@ -487,6 +515,10 @@
 
         <div class="sub-option">
           <h3>Het Meerdal <span class="highlight">Limburg, NL – TOP für Kleinkinder</span></h3>
+          <div class="ratings">
+            <span class="rating-badge good">Google <span class="score">4.1/5</span> (9.060)</span>
+            <span class="rating-badge good">Booking <span class="score">8.0/10</span></span>
+          </div>
           <ul>
             <li>Pony-Cottages mit eigenem Pony</li>
             <li>Aqua Mundo mit 103m Rutsche</li>
@@ -498,6 +530,10 @@
 
         <div class="sub-option">
           <h3>Port Zélande <span class="highlight">Südholland – Am Meer!</span></h3>
+          <div class="ratings">
+            <span class="rating-badge good">Google <span class="score">4.0/5</span> (14.417)</span>
+            <span class="rating-badge mid">Booking <span class="score">7.5/10</span></span>
+          </div>
           <ul>
             <li>Direkt am Grevelingenmeer UND Nordsee</li>
             <li>Größtes Aktivitäten-Angebot aller Center Parcs</li>
@@ -508,6 +544,10 @@
 
         <div class="sub-option">
           <h3>Erperheide <span class="highlight">Kempen, Belgien – Familienpark</span></h3>
+          <div class="ratings">
+            <span class="rating-badge good">Google <span class="score">4.2/5</span> (9.342)</span>
+            <span class="rating-badge top">Booking <span class="score">8.5/10</span></span>
+          </div>
           <ul>
             <li>Tropisches Schwimmbad + Unterwasserwelt</li>
             <li>Kinderbauernhof + Ponyferienhäuser</li>
@@ -518,6 +558,10 @@
 
         <div class="sub-option">
           <h3>Park De Haan <span class="highlight">Belgische Nordsee – Strand + Brügge</span></h3>
+          <div class="ratings">
+            <span class="rating-badge mid">Google <span class="score">3.8/5</span> (6.800)</span>
+            <span class="rating-badge mid">Booking <span class="score">7.6/10</span></span>
+          </div>
           <ul>
             <li>Längster Badestrand Belgiens</li>
             <li>Brügge in der Nähe</li>
@@ -527,6 +571,10 @@
 
         <div class="sub-option">
           <h3>Bostalsee <span class="highlight">Saarland – Nah an Zell am Main!</span></h3>
+          <div class="ratings">
+            <span class="rating-badge good">Google <span class="score">4.1/5</span></span>
+            <span class="rating-badge good">TripAdvisor <span class="score">4.0/5</span></span>
+          </div>
           <ul>
             <li>Nur ca. 3h Fahrt von Zell am Main</li>
             <li>84 Aktivitäten im Park</li>
@@ -554,6 +602,10 @@
 
         <div class="sub-option">
           <h3>Landal Sonnenberg <span class="highlight">Moseltal</span></h3>
+          <div class="ratings">
+            <span class="rating-badge top">Google <span class="score">4.4/5</span></span>
+            <span class="rating-badge top">Bewertungsportale <span class="score">8.1/10</span></span>
+          </div>
           <ul>
             <li>Hallenbad, Minigolf, Kletterwand, Seilbahn</li>
             <li>Indoor-Spielplatz, Bowlingbahn</li>
@@ -565,6 +617,10 @@
 
         <div class="sub-option">
           <h3>Landal Salztal Paradies <span class="highlight">Bad Sachsa / Harz</span></h3>
+          <div class="ratings">
+            <span class="rating-badge good">Google <span class="score">4.0/5</span> (1.977)</span>
+            <span class="rating-badge good">Booking <span class="score">7.9/10</span></span>
+          </div>
           <ul>
             <li>Erlebnisbad, Bowlingbahn, Eislaufhalle</li>
             <li>Indoor-Spielparadies</li>
@@ -575,6 +631,10 @@
 
         <div class="sub-option">
           <h3>Landal Winterberg <span class="highlight">Hochsauerland</span></h3>
+          <div class="ratings">
+            <span class="rating-badge top">Booking <span class="score">8.2/10</span></span>
+            <span class="rating-badge good">TripAdvisor <span class="score">3.0/5</span></span>
+          </div>
           <ul>
             <li>Indoor-Spielplatz, Erlebnisbad</li>
             <li>Rodelbahn, Wanderwege</li>
@@ -597,6 +657,10 @@
 
         <div class="sub-option">
           <h3>Post Alpina Feriendorf <span class="highlight">Sexten / Dolomiten</span></h3>
+          <div class="ratings">
+            <span class="rating-badge top">Booking <span class="score">9.2/10</span></span>
+            <span class="rating-badge top">TripAdvisor <span class="score">5.0/5</span></span>
+          </div>
           <ul>
             <li>Chalets mit Selbstversorgung ODER Restaurant</li>
             <li>Direkt in den Dolomiten (UNESCO Welterbe)</li>
@@ -608,6 +672,10 @@
 
         <div class="sub-option">
           <h3>Feriendorf Hochpustertal</h3>
+          <div class="ratings">
+            <span class="rating-badge good">TripAdvisor <span class="score">4.0/5</span> (323)</span>
+            <span class="rating-badge top">#1 in Sillian</span>
+          </div>
           <ul>
             <li>Autofreies Feriendorf mit Chalets</li>
             <li>Riesiger Indoor-Spielplatz</li>
@@ -619,6 +687,10 @@
 
         <div class="sub-option">
           <h3>Bacherstay <span class="highlight">Brixen</span></h3>
+          <div class="ratings">
+            <span class="rating-badge top">TripAdvisor <span class="score">5.0/5</span> (41)</span>
+            <span class="rating-badge top">#3 in Brixen</span>
+          </div>
           <ul>
             <li>Apartments mit Schwimmbad</li>
             <li>Boulderwand, Tretgokarts, Trampolin</li>
@@ -684,6 +756,10 @@
 
         <div class="sub-option">
           <h3>Weißenhäuser Strand <span class="highlight">Ostsee</span></h3>
+          <div class="ratings">
+            <span class="rating-badge good">Bewertungsportale <span class="score">4.0/5</span></span>
+            <span class="rating-badge good">TripAdvisor <span class="score">4.0/5</span> (105)</span>
+          </div>
           <ul>
             <li>Riesiges Ferienresort direkt am Strand</li>
             <li>Subtropisches Badeparadies</li>
@@ -787,6 +863,11 @@
 
         <div class="sub-option">
           <h3>Natterer See Ferienparadies <span class="highlight">Tirol</span></h3>
+          <div class="ratings">
+            <span class="rating-badge top">Camping.info <span class="score">4.7/5</span></span>
+            <span class="rating-badge top">Booking <span class="score">8.9/10</span></span>
+            <span class="rating-badge good">TripAdvisor <span class="score">4.0/5</span> (416)</span>
+          </div>
           <ul>
             <li>Bergpanorama, Kinderprogramm, Restaurant</li>
           </ul>
