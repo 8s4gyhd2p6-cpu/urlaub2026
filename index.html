@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sommerurlaub 2026 – Ideen & Vorschläge</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --accent-green: #16a34a;
+      --accent-orange: #ea580c;
+      --accent-purple: #7c3aed;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 1rem;
+    }
+
+    .hero .meta {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    .hero .badge {
+      background: rgba(255,255,255,0.2);
+      padding: 0.4rem 0.8rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Navigation */
+    .nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .nav a {
+      display: inline-block;
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      margin-right: 0.25rem;
+    }
+
+    .nav a:hover, .nav a:active {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    /* Option Card */
+    .option-card {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+    }
+
+    .option-card .card-image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .option-card .card-number {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .option-card .image-wrapper {
+      position: relative;
+    }
+
+    .option-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .option-card h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: var(--text);
+    }
+
+    .option-card .card-tagline {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .option-card .card-intro {
+      color: var(--text-light);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    /* Sub-options */
+    .sub-option {
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+
+    .sub-option:hover {
+      border-color: var(--primary);
+    }
+
+    .sub-option h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .sub-option h3 .highlight {
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-left: 0.5rem;
+    }
+
+    .sub-option ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    .sub-option ul li {
+      padding: 0.15rem 0;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .sub-option ul li::before {
+      content: "✓ ";
+      color: var(--accent-green);
+      font-weight: 600;
+    }
+
+    .sub-option .price {
+      font-size: 0.85rem;
+      color: var(--accent-orange);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .sub-option .link-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .sub-option .link-btn:hover, .sub-option .link-btn:active {
+      background: #1d4ed8;
+    }
+
+    /* Tip box */
+    .tip-box {
+      background: #fef3c7;
+      border: 1px solid #fbbf24;
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .tip-box strong {
+      color: #92400e;
+    }
+
+    /* Excursion tips */
+    .excursion-box {
+      background: #ecfdf5;
+      border: 1px solid #6ee7b7;
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .excursion-box h4 {
+      color: #065f46;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .excursion-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .excursion-box ul li {
+      font-size: 0.9rem;
+      color: #064e3b;
+      padding: 0.15rem 0;
+    }
+
+    .excursion-box ul li::before {
+      content: "🎯 ";
+    }
+
+    /* Provider links */
+    .provider-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .provider-links a {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .provider-links a:hover, .provider-links a:active {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* Regions */
+    .region-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .region-tag {
+      background: #f1f5f9;
+      color: var(--text);
+      padding: 0.3rem 0.7rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+    }
+
+    /* Comparison Table */
+    .comparison-section {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+    }
+
+    .comparison-section h2 {
+      padding: 1.5rem 1.5rem 0.75rem;
+      font-size: 1.5rem;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .comparison-table th {
+      background: #f1f5f9;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-light);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .comparison-table td {
+      padding: 0.75rem 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .comparison-table tr:hover {
+      background: #f8fafc;
+    }
+
+    .comparison-table .dest-name {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .kid-rating {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.3rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .kid-rating.top { background: #dcfce7; color: #166534; }
+    .kid-rating.sehr-gut { background: #dbeafe; color: #1e40af; }
+    .kid-rating.gut { background: #fef3c7; color: #92400e; }
+
+    /* Tips section */
+    .tips-section {
+      background: var(--card-bg);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+    }
+
+    .tips-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tips-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tips-section ul li {
+      padding: 0.5rem 0;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tips-section ul li:last-child {
+      border-bottom: none;
+    }
+
+    .tips-section ul li::before {
+      content: "💡 ";
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-light);
+      font-size: 0.85rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .option-card .card-image {
+        height: 200px;
+      }
+
+      .comparison-table {
+        font-size: 0.75rem;
+      }
+
+      .comparison-table th, .comparison-table td {
+        padding: 0.5rem 0.5rem;
+      }
+
+      .nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>☀️ Sommerurlaub 2026</h1>
+    <p class="subtitle">Ideen & Vorschläge für unseren Familienurlaub</p>
+    <div class="meta">
+      <span class="badge">📅 15. – 29. August</span>
+      <span class="badge">👨‍👩‍👧‍👦 Familienurlaub</span>
+      <span class="badge">🏡 Ferienhaus / -wohnung</span>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <nav class="nav" id="top-nav">
+    <a href="#option1">🏊 Center Parcs</a>
+    <a href="#option2">🌲 Landal</a>
+    <a href="#option3">⛰️ Südtirol</a>
+    <a href="#option4">🇩🇰 Dänemark</a>
+    <a href="#option5">🏖️ Ostsee</a>
+    <a href="#option6">🌊 Bretagne</a>
+    <a href="#option7">🏔️ Slowenien</a>
+    <a href="#option8">🇸🇪 Schweden</a>
+    <a href="#option9">🇦🇹 Österreich</a>
+    <a href="#vergleich">📊 Vergleich</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- OPTION 1: Center Parcs -->
+    <div class="option-card" id="option1">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1552083974-186346191183?w=900&h=400&fit=crop" alt="Center Parcs - Tropisches Schwimmbad" loading="lazy">
+        <div class="card-number">1</div>
+      </div>
+      <div class="card-body">
+        <h2>Center Parcs</h2>
+        <p class="card-tagline">Niederlande · Belgien · Deutschland</p>
+        <p class="card-intro">Das Original – tropisches Schwimmbad (Aqua Mundo), Restaurants, Kinderanimation, Spielplätze. Alles in einer Anlage, perfekt für Familien mit kleinen Kindern.</p>
+
+        <div class="sub-option">
+          <h3>Het Meerdal <span class="highlight">Limburg, NL – TOP für Kleinkinder</span></h3>
+          <ul>
+            <li>Pony-Cottages mit eigenem Pony</li>
+            <li>Aqua Mundo mit 103m Rutsche</li>
+            <li>BALUBA Indoor-Spielwelt</li>
+          </ul>
+          <p class="price">💰 ca. 1.700 – 2.000 €/Woche (4 Pers.)</p>
+          <a class="link-btn" href="https://www.centerparcs.de/de-de/niederlande/fp_HM_ferienpark-het-meerdal" target="_blank">→ Het Meerdal ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Port Zélande <span class="highlight">Südholland – Am Meer!</span></h3>
+          <ul>
+            <li>Direkt am Grevelingenmeer UND Nordsee</li>
+            <li>Größtes Aktivitäten-Angebot aller Center Parcs</li>
+            <li>Strand + Wassersport</li>
+          </ul>
+          <a class="link-btn" href="https://www.centerparcs.de/de-de/niederlande/fp_PZ_ferienpark-port-zelande" target="_blank">→ Port Zélande ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Erperheide <span class="highlight">Kempen, Belgien – Familienpark</span></h3>
+          <ul>
+            <li>Tropisches Schwimmbad + Unterwasserwelt</li>
+            <li>Kinderbauernhof + Ponyferienhäuser</li>
+            <li>Tolle Wander- & Radwege</li>
+          </ul>
+          <a class="link-btn" href="https://www.centerparcs.de/de-de/belgien/fp_EP_ferienpark-erperheide" target="_blank">→ Erperheide ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Park De Haan <span class="highlight">Belgische Nordsee – Strand + Brügge</span></h3>
+          <ul>
+            <li>Längster Badestrand Belgiens</li>
+            <li>Brügge in der Nähe</li>
+          </ul>
+          <a class="link-btn" href="https://www.centerparcs.de/de-de/belgien/fp_DH_ferienpark-park-de-haan" target="_blank">→ Park De Haan ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Bostalsee <span class="highlight">Saarland – Nah an Zell am Main!</span></h3>
+          <ul>
+            <li>Nur ca. 3h Fahrt von Zell am Main</li>
+            <li>84 Aktivitäten im Park</li>
+          </ul>
+          <p class="price">💰 ca. 1.695 €/Woche (4 Pers.)</p>
+          <a class="link-btn" href="https://www.centerparcs.de/de-de/deutschland/fp_BL_ferienpark-park-bostalsee" target="_blank">→ Bostalsee ansehen</a>
+        </div>
+
+        <div class="tip-box">
+          <strong>💡 Tipp:</strong> Frühbucher-Rabatt 20% bei 120+ Tagen Vorlauf – jetzt schon buchen!
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 2: Landal GreenParks -->
+    <div class="option-card" id="option2">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=900&h=400&fit=crop" alt="Landal GreenParks - Naturnaher Ferienpark" loading="lazy">
+        <div class="card-number">2</div>
+      </div>
+      <div class="card-body">
+        <h2>Landal GreenParks</h2>
+        <p class="card-tagline">Deutschland</p>
+        <p class="card-intro">Naturnahe Ferienparks mit Schwimmbad, Spielplätzen, Restaurants. Etwas ruhiger als Center Parcs, aber genauso familienfreundlich.</p>
+
+        <div class="sub-option">
+          <h3>Landal Sonnenberg <span class="highlight">Moseltal</span></h3>
+          <ul>
+            <li>Hallenbad, Minigolf, Kletterwand, Seilbahn</li>
+            <li>Indoor-Spielplatz, Bowlingbahn</li>
+            <li>Kinderclubs ganzjährig</li>
+          </ul>
+          <p class="price">💰 ca. 1.802 €/Woche (6 Pers.)</p>
+          <a class="link-btn" href="https://www.landal.de/ferienpark/sonnenberg" target="_blank">→ Sonnenberg ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Landal Salztal Paradies <span class="highlight">Bad Sachsa / Harz</span></h3>
+          <ul>
+            <li>Erlebnisbad, Bowlingbahn, Eislaufhalle</li>
+            <li>Indoor-Spielparadies</li>
+            <li>Harz = tolle Ausflüge (Brocken, Tropfsteinhöhlen)</li>
+          </ul>
+          <a class="link-btn" href="https://www.landal.de/ferienpark/salztal-paradies" target="_blank">→ Salztal Paradies ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Landal Winterberg <span class="highlight">Hochsauerland</span></h3>
+          <ul>
+            <li>Indoor-Spielplatz, Erlebnisbad</li>
+            <li>Rodelbahn, Wanderwege</li>
+          </ul>
+          <a class="link-btn" href="https://www.landal.de/ferienpark/winterberg" target="_blank">→ Winterberg ansehen</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 3: Südtirol -->
+    <div class="option-card" id="option3">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1586768728876-7ba7db6fbbb4?w=900&h=400&fit=crop" alt="Südtirol - Dolomiten" loading="lazy">
+        <div class="card-number">3</div>
+      </div>
+      <div class="card-body">
+        <h2>Südtirol</h2>
+        <p class="card-tagline">Italien – Berge statt Hitze! 🏔️</p>
+        <p class="card-intro">Im August angenehm kühl in den Bergen, trotzdem italienisches Flair. Pizza, Pasta und Panorama – perfekte Kombination.</p>
+
+        <div class="sub-option">
+          <h3>Post Alpina Feriendorf <span class="highlight">Sexten / Dolomiten</span></h3>
+          <ul>
+            <li>Chalets mit Selbstversorgung ODER Restaurant</li>
+            <li>Direkt in den Dolomiten (UNESCO Welterbe)</li>
+            <li>Wandern, Radtouren, Bergseen</li>
+            <li>Spa-Bereich</li>
+          </ul>
+          <a class="link-btn" href="https://www.posthotel.it" target="_blank">→ Post Alpina ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Feriendorf Hochpustertal</h3>
+          <ul>
+            <li>Autofreies Feriendorf mit Chalets</li>
+            <li>Riesiger Indoor-Spielplatz</li>
+            <li>Animation für Kinder</li>
+            <li>Restaurants & kulinarisches Konzept</li>
+          </ul>
+          <a class="link-btn" href="https://www.feriendorf-hochpustertal.com" target="_blank">→ Hochpustertal ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Bacherstay <span class="highlight">Brixen</span></h3>
+          <ul>
+            <li>Apartments mit Schwimmbad</li>
+            <li>Boulderwand, Tretgokarts, Trampolin</li>
+            <li>Indoor-Spielraum, Sandkasten, Grillstelle</li>
+          </ul>
+          <a class="link-btn" href="https://www.bacherstay.com" target="_blank">→ Bacherstay ansehen</a>
+        </div>
+
+        <div class="excursion-box">
+          <h4>🎯 Ausflugstipps Südtirol</h4>
+          <ul>
+            <li>Outdoor Kids Camp Meran 2000 (Kletterwand, Zip-Line)</li>
+            <li>Kinderwelt Olang (56m Rutsche!)</li>
+            <li>Bergseen zum Baden</li>
+            <li>Dolomiten-Wanderungen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 4: Dänemark -->
+    <div class="option-card" id="option4">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=900&h=400&fit=crop" alt="Dänemark - Strand und Dünen" loading="lazy">
+        <div class="card-number">4</div>
+      </div>
+      <div class="card-body">
+        <h2>Dänemark</h2>
+        <p class="card-tagline">Ostsee & Nordsee 🇩🇰</p>
+        <p class="card-intro">Nicht zu heiß, flaches Wasser, endlose Sandstrände. Typische Ferienhäuser mit Sauna & Pool. Legoland Billund in der Nähe!</p>
+
+        <ul style="list-style:none; padding:0; margin-bottom:1rem;">
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Angenehme Temperaturen (20–25°C)</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Flaches Wasser ideal für kleine Kinder</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Typische Ferienhäuser mit Sauna & Pool</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Legoland Billund in der Nähe</li>
+        </ul>
+
+        <div class="region-list" style="margin-bottom:1rem;">
+          <span class="region-tag">🌊 Westjütland – Endlose Nordseestrände</span>
+          <span class="region-tag">🏖️ Ostjütland – Ruhiger, wärmer</span>
+          <span class="region-tag">✨ Insel Fünen – Märchenhaft</span>
+        </div>
+
+        <h4 style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.5rem;">Anbieter:</h4>
+        <div class="provider-links">
+          <a href="https://www.landal.de/urlaub/danemark" target="_blank">Landal Dänemark</a>
+          <a href="https://www.novasol.de/ferienhaeuser/daenemark" target="_blank">Novasol</a>
+          <a href="https://www.dancenter.de" target="_blank">Dancenter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 5: Deutsche Ostsee/Nordsee -->
+    <div class="option-card" id="option5">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&h=400&fit=crop" alt="Deutsche Ostsee - Strand" loading="lazy">
+        <div class="card-number">5</div>
+      </div>
+      <div class="card-body">
+        <h2>Deutsche Ostsee / Nordsee</h2>
+        <p class="card-tagline">Strandurlaub vor der Haustür 🏖️</p>
+
+        <div class="sub-option">
+          <h3>Weißenhäuser Strand <span class="highlight">Ostsee</span></h3>
+          <ul>
+            <li>Riesiges Ferienresort direkt am Strand</li>
+            <li>Subtropisches Badeparadies</li>
+            <li>Indoor-Spielplatz</li>
+            <li>Restaurants, Shops, Shows</li>
+          </ul>
+          <a class="link-btn" href="https://www.weissenhaeuserstrand.de" target="_blank">→ Weißenhäuser Strand ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Center Parcs Nordseeküste <span class="highlight">Butjadingen</span></h3>
+          <ul>
+            <li>Aqua Mundo Schwimmbad</li>
+            <li>Direkt an der Nordsee</li>
+            <li>Kinderanimation</li>
+          </ul>
+          <a class="link-btn" href="https://www.centerparcs.de" target="_blank">→ Center Parcs Nordseeküste ansehen</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 6: Bretagne -->
+    <div class="option-card" id="option6">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1500258889858-33fb37ef8e15?w=900&h=400&fit=crop" alt="Bretagne - Französische Küste" loading="lazy">
+        <div class="card-number">6</div>
+      </div>
+      <div class="card-body">
+        <h2>Bretagne</h2>
+        <p class="card-tagline">Frankreich – Geheimtipp! 🇫🇷</p>
+        <p class="card-intro">Auch im August angenehm, immer leichte Brise. Wunderschöne Küste, Sandstrände, Crêpes & französische Küche.</p>
+
+        <ul style="list-style:none; padding:0; margin-bottom:1rem;">
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Wunderschöne Küste & Sandstrände</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Crêpes & französische Küche</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Camping/Glamping-Resorts mit Pool</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Mont Saint-Michel als Ausflug</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Temperaturen 20–25°C</li>
+        </ul>
+
+        <h4 style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.5rem;">Anbieter:</h4>
+        <div class="provider-links">
+          <a href="https://www.yellohvillage.de" target="_blank">Yelloh! Village</a>
+          <a href="https://www.eurocamp.de/camping-frankreich/bretagne" target="_blank">Eurocamp Bretagne</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 7: Slowenien -->
+    <div class="option-card" id="option7">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1573650929682-1b4205bfc189?w=900&h=400&fit=crop" alt="Slowenien - Bleder See" loading="lazy">
+        <div class="card-number">7</div>
+      </div>
+      <div class="card-body">
+        <h2>Slowenien</h2>
+        <p class="card-tagline">Europas Geheimtipp 🏔️</p>
+        <p class="card-intro">Nicht überlaufen, traumhaft schön, bezahlbar. Günstig verglichen mit Österreich/Italien.</p>
+
+        <ul style="list-style:none; padding:0; margin-bottom:1rem;">
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Triglav-Nationalpark: Kristallklare Seen, Wasserfälle</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Bleder See: Märchenhaft schön</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Ljubljana: Kinderfreundliche Hauptstadt</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Küste bei Piran: Adriatisches Meer</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Angenehme Temperaturen in den Bergen</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 8: Schweden -->
+    <div class="option-card" id="option8">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=900&h=400&fit=crop" alt="Schweden - Rotes Holzhaus am See" loading="lazy">
+        <div class="card-number">8</div>
+      </div>
+      <div class="card-body">
+        <h2>Schweden</h2>
+        <p class="card-tagline">Natur pur 🇸🇪</p>
+        <p class="card-intro">Überraschend warm im August (bis 30°C!), endlos lang hell. Das perfekte Abenteuer für Familien.</p>
+
+        <ul style="list-style:none; padding:0; margin-bottom:1rem;">
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Schären (Archipel) vor Stockholm</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Rote Holzhäuser am See mieten</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Astrid Lindgrens Welt (Vimmerby) für Kinder</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Liseberg Freizeitpark (Göteborg)</li>
+          <li style="padding:0.25rem 0; font-size:0.95rem;">✓ Saubere Badeseen überall</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 9: Österreich -->
+    <div class="option-card" id="option9">
+      <div class="image-wrapper">
+        <img class="card-image" src="https://images.unsplash.com/photo-1531973819741-e27a5ae2cc7b?w=900&h=400&fit=crop" alt="Österreich - Bergsee" loading="lazy">
+        <div class="card-number">9</div>
+      </div>
+      <div class="card-body">
+        <h2>Österreich</h2>
+        <p class="card-tagline">Nah & Familienfreundlich 🇦🇹</p>
+        <p class="card-intro">Nur 3–4h von Zell am Main. Berge, Seen, angenehm – und keine Sprachbarriere!</p>
+
+        <div class="sub-option">
+          <h3>Natterer See Ferienparadies <span class="highlight">Tirol</span></h3>
+          <ul>
+            <li>Bergpanorama, Kinderprogramm, Restaurant</li>
+          </ul>
+          <a class="link-btn" href="https://www.natterersee.com" target="_blank">→ Natterer See ansehen</a>
+        </div>
+
+        <div class="sub-option">
+          <h3>Kärnten</h3>
+          <ul>
+            <li>Wörthersee, Millstätter See – badetauglich!</li>
+          </ul>
+        </div>
+
+        <div class="sub-option">
+          <h3>Salzburger Land</h3>
+          <ul>
+            <li>Seen + Berge + Salzburg-Ausflug</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vergleich -->
+    <div class="comparison-section" id="vergleich">
+      <h2>📊 Vergleich auf einen Blick</h2>
+      <div style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Ziel</th>
+              <th>Temp.</th>
+              <th>Anfahrt</th>
+              <th>Preis/Woche</th>
+              <th>Kinder</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="dest-name"><a href="#option1" style="color:inherit; text-decoration:none;">Center Parcs</a></td>
+              <td>20–25°C</td>
+              <td>5–7h</td>
+              <td>ab 1.700 €</td>
+              <td><span class="kid-rating top">⭐ Top</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option2" style="color:inherit; text-decoration:none;">Landal</a></td>
+              <td>22–28°C</td>
+              <td>2–5h</td>
+              <td>ab 1.500 €</td>
+              <td><span class="kid-rating sehr-gut">Sehr gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option3" style="color:inherit; text-decoration:none;">Südtirol</a></td>
+              <td>20–28°C</td>
+              <td>5–6h</td>
+              <td>ab 1.000 €</td>
+              <td><span class="kid-rating sehr-gut">Sehr gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option4" style="color:inherit; text-decoration:none;">Dänemark</a></td>
+              <td>18–24°C</td>
+              <td>8–10h</td>
+              <td>ab 1.200 €</td>
+              <td><span class="kid-rating sehr-gut">Sehr gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option5" style="color:inherit; text-decoration:none;">Ostsee/Nordsee</a></td>
+              <td>20–25°C</td>
+              <td>5–7h</td>
+              <td>ab 1.200 €</td>
+              <td><span class="kid-rating sehr-gut">Sehr gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option6" style="color:inherit; text-decoration:none;">Bretagne</a></td>
+              <td>20–25°C</td>
+              <td>8–10h</td>
+              <td>ab 1.000 €</td>
+              <td><span class="kid-rating gut">Gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option7" style="color:inherit; text-decoration:none;">Slowenien</a></td>
+              <td>22–28°C</td>
+              <td>6–7h</td>
+              <td>ab 800 €</td>
+              <td><span class="kid-rating gut">Gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option8" style="color:inherit; text-decoration:none;">Schweden</a></td>
+              <td>20–28°C</td>
+              <td>12h+</td>
+              <td>ab 1.500 €</td>
+              <td><span class="kid-rating sehr-gut">Sehr gut</span></td>
+            </tr>
+            <tr>
+              <td class="dest-name"><a href="#option9" style="color:inherit; text-decoration:none;">Österreich</a></td>
+              <td>22–28°C</td>
+              <td>3–4h</td>
+              <td>ab 1.000 €</td>
+              <td><span class="kid-rating sehr-gut">Sehr gut</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tipps -->
+    <div class="tips-section">
+      <h2>💡 Generelle Tipps</h2>
+      <ul>
+        <li>Frühbucher-Rabatte nutzen – jetzt buchen für August!</li>
+        <li>Center Parcs: 20% Rabatt bei 120+ Tagen Vorlauf</li>
+        <li>Nebensaison der Bundesländer beachten</li>
+        <li>Selbstversorgung spart viel Geld</li>
+        <li>Reiseversicherung nicht vergessen</li>
+        <li>Bei 2 Wochen evtl. 2 verschiedene Orte kombinieren?</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Erstellt von Ty 🤖 am 09. Februar 2026</p>
+    <p style="margin-top:0.25rem; font-size:0.8rem;">Alle Preise sind Richtwerte und können je nach Saison variieren.</p>
+  </div>
+
+</body>
+</html>
